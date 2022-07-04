@@ -20,7 +20,7 @@ import Child from './Child.vue';
 export default {
   name: 'App',
   data: () => ({
-    userToSearch: null,
+    userToSearch: '',
     users: [
       { name: 'Mario', age: 29 },
       { name: 'David', age: 40 },
