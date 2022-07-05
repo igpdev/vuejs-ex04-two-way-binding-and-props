@@ -6,11 +6,13 @@
     <li v-for="user in users">{{ user.name }}</li>
     <br />
     Search a user age: <input v-model="userToSearch" />
+    <!-- Instruction 1 answer -->
     <p>
       User entered <strong>{{ userToSearch }}</strong>
     </p>
     <br />
     <Child @fetchUsers="fetchUsersService" :userToSearch="userToSearch" />
+    <!--Instruction 2 answer -->
   </div>
 </template>
 
@@ -20,7 +22,7 @@ import Child from './Child.vue';
 export default {
   name: 'App',
   data: () => ({
-    userToSearch: '',
+    userToSearch: '', // Instruction 1 answer
     users: [
       { name: 'Mario', age: 29 },
       { name: 'David', age: 40 },
